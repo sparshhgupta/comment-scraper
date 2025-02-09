@@ -1,0 +1,24 @@
+{
+  "comments": [
+    "This would have been great if there was audio. Did you forget to add it?",
+    "Uh, there’s no sound in the video. Can you re-upload it with audio?",
+    "Amazing visuals, but the lack of audio really takes away from the experience.",
+    "I love the effort you put into the video, but there’s no sound. Please fix this!",
+    "This could’ve been perfect with some background music or a voiceover. It’s completely silent.",
+    "The video looks amazing, but I think you forgot to include the audio track.",
+    "Your videos are usually great, but this one is missing audio. What happened?",
+    "No audio? I was really looking forward to hearing your insights!",
+    "Without audio, it’s hard to follow what’s going on. Please add it and re-upload.",
+    "This is so disappointing. How can you forget something as basic as audio?",
+    "Even without audio, the visuals are stunning. Can’t wait to see the fixed version!",
+    "I really enjoyed the video, but it feels incomplete without any sound or narration.",
+    "You nailed the visuals, but the lack of audio makes it feel unfinished. Please fix it!",
+    "Is this a silent film? Jokes aside, it’s missing audio, and that’s a shame.",
+    "Your content is usually amazing, but this silent video doesn’t do it justice.",
+    "The visuals are top-notch, but why is there no audio? Was it intentional?",
+    "You forgot the audio, LOL. Still, the visuals are pretty impressive!",
+    "No sound? That’s a rookie mistake. Make sure to double-check next time.",
+    "How do you expect us to understand this without any audio? Please fix it!",
+    "I watched the whole thing hoping the sound would kick in at some point. Guess not!"
+  ]
+}

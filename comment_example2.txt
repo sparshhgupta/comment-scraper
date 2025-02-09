@@ -1,0 +1,20 @@
+{
+  "comments": [
+    "The audio in this video is terrible. The mic quality is poor and I can barely hear what you're saying.",
+    "I had to increase the volume all the way up to hear anything. The sound is too low.",
+    "Great video! But please work on your mic setup, the audio could be better.",
+    "The camera quality is amazing! The focus is sharp and clear, great job on the visuals.",
+    "I love the way you explain things. The video content is really interesting and educational.",
+    "I couldn’t focus because the audio was so bad. It was hard to hear over the background noise.",
+    "This video is boring and too slow. I almost fell asleep halfway through.",
+    "The content is good, but the pacing needs work. It drags a bit in the middle.",
+    "The video quality is great but the background music was too loud compared to your voice.",
+    "It would be nice if you could improve the video focus. Sometimes it was blurry.",
+    "The discussion in the video was really engaging, I learned a lot about large language models.",
+    "I was expecting better sound quality. It seemed like there was an echo throughout the video.",
+    "The mic volume is really low. I had to adjust the settings to hear properly.",
+    "The visuals were perfect, but the sound ruined the experience. Please fix it.",
+    "Amazing video, I loved the way you handled the topic. It was so insightful and educational.",
+    "It’s hard to hear what you’re saying because of the mic. Try a better setup next time."
+  ]
+}

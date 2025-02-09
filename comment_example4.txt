@@ -1,0 +1,25 @@
+{
+  "comments": [
+    "This is absolutely amazing! The content creator really knows how to keep things interesting. Keep it up!",
+    "I can't believe how much I learned from this video. You have such a great way of explaining things!",
+    "Wow, this is by far the best content I've seen on this topic. Your research is spot on!",
+    "The visuals and the way you explain everything are just perfect. I could watch your videos all day!",
+    "I'm blown away by how well you articulate complex ideas. This is top-tier content!",
+    "You always bring something new and exciting to the table. I can't wait for the next video!",
+    "The quality of this video is unbelievable. Every detail is so well thought out and executed!",
+    "You’ve gained a loyal follower in me. Keep up the fantastic work. I’m learning so much from you!",
+    "Incredible! The way you break down topics is unmatched. This is content I would pay for.",
+    "You really have a gift for storytelling. I couldn't stop watching. Amazing job!",
+    "The content is good, but I feel like you're just repeating the same things over and over.",
+    "Honestly, your videos are too long. A bit more concise would be much better.",
+    "This video was way too boring. I couldn't get through the whole thing, and I’m usually a fan.",
+    "Your editing is great, but the way you present the information is just not engaging enough for me.",
+    "I don’t get the hype. This video is just like every other one. Nothing special about it.",
+    "I’ve seen better content on this topic elsewhere. This video didn’t impress me at all.",
+    "I hate the background music, it completely ruins the vibe of your content.",
+    "You’re not even giving any real value here. Just a bunch of fluff and no depth.",
+    "This is just another overhyped video. It’s not as great as everyone is making it out to be.",
+    "I really don’t see why people are praising this. It feels like a waste of time to me.",
+    "Your content is just pure entertainment, but I would love to see more substance next time."
+  ]
+}

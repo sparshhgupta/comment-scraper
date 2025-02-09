@@ -1,0 +1,245 @@
+async function extractComments() {
+    let commentsData = Array.from(document.querySelectorAll("#comment")).map(comment => {
+        return {
+            text: comment.querySelector("#content-text")?.textContent.trim() || "No comment text",
+            author: comment.querySelector("#author-text span")?.textContent.trim() || "Anonymous",
+            timestamp: comment.querySelector("#published-time-text")?.textContent.trim() || "Unknown",
+            likes: comment.querySelector("#vote-count-middle")?.textContent.trim() || "0"
+        };
+    });
+
+    // Clean comment text
+    commentsData = commentsData.map(comment => ({
+        ...comment,
+        text: comment.text
+            .replace(/[\r\n]+/g, " ")
+            .replace(/[\u200B-\u200D\uFEFF]/g, "")
+            .replace(/[^a-zA-Z0-9 .,!?'-]/g, "")
+            .trim()
+    }));
+
+    console.log("Extracted Comments Data:", commentsData);
+    alert(`Successfully scraped ${commentsData.length} comments.`);
+    return commentsData;
+}
+
+extractComments();
+
+
+
+
+
+
+
+async function scrapeComments() {
+    let comments = [];
+    let commentContainer = document.querySelector("#comments");
+
+    if (!commentContainer) {
+        console.error("Comment container not found.");
+        return;
+    }
+
+    // Use MutationObserver to capture dynamically loaded comments
+    let observer = new MutationObserver((mutations) => {
+        mutations.forEach(mutation => {
+            mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1 && node.matches("#content-text")) {
+                    console.log("New comment detected:", node.textContent.trim());
+                    comments.push(node.textContent.trim());
+                }
+            });
+        });
+    });
+
+    observer.observe(commentContainer, { childList: true, subtree: true });
+
+    // Scroll to load more comments
+    let scrollContainer = document.documentElement;
+    let previousHeight = 0;
+
+    for (let i = 0; i < 10; i++) {
+        scrollContainer.scrollBy(0, 1000);
+        await new Promise(resolve => setTimeout(resolve, 1000));
+
+        let currentHeight = scrollContainer.scrollHeight;
+        if (currentHeight === previousHeight) break;
+        previousHeight = currentHeight;
+    }
+
+    observer.disconnect(); // Stop observing after scraping
+    console.log("All comments scraped:", comments);
+    return comments;
+}
+scrapeComments();
+
+
+
+
+function scrapeComments() {
+    const comments = [];
+    const commentElements = document.querySelectorAll(".comment-text"); // Example selector
+  
+    commentElements.forEach((el) => {
+      comments.push(el.innerText);
+    });
+  
+    // Send comments to the background script
+    chrome.runtime.sendMessage({ type: "scrape", data: comments });
+  }
+  
+  scrapeComments();
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  async function scrapeComments() {
+    const COMMENT_SELECTOR = "#content-text"; // Adjust for different platforms
+    const COMMENT_CONTAINER = "#comments"; // Main comment container
+    let comments = new Set(); // Using Set to avoid duplicates
+    let commentContainer = document.querySelector(COMMENT_CONTAINER);
+
+    if (!commentContainer) {
+        console.error("Comment container not found.");
+        return;
+    }
+
+    // 1. Scrape initially loaded comments
+    const initialComments = document.querySelectorAll(COMMENT_SELECTOR);
+    initialComments.forEach((comment) => {
+        comments.add(comment.textContent.trim());
+    });
+
+    console.log("Initial comments scraped:", Array.from(comments));
+
+    // 2. Use MutationObserver to capture dynamically loaded comments
+    let observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            mutation.addedNodes.forEach((node) => {
+                if (node.nodeType === 1 && node.matches(COMMENT_SELECTOR)) {
+                    console.log("New comment detected:", node.textContent.trim());
+                    comments.add(node.textContent.trim());
+                }
+            });
+        });
+    });
+
+    observer.observe(commentContainer, { childList: true, subtree: true });
+
+    // 3. Scroll to load more comments in a loop
+    let scrollContainer = document.documentElement;
+    let previousHeight = 0;
+    let scrollAttempts = 0;
+    let maxAttempts = 10;  // Limit scroll attempts to avoid infinite loop
+
+    // Function to scroll and load new comments
+    const autoScroll = async () => {
+        while (scrollAttempts < maxAttempts) {
+            scrollContainer.scrollBy(0, 1000);  // Scroll down
+            await new Promise((resolve) => setTimeout(resolve, 1000));  // Wait for content to load
+
+            let currentHeight = scrollContainer.scrollHeight;
+            console.log("Current height:", currentHeight, "Previous height:", previousHeight);
+
+            // If the page height hasn't increased, stop scrolling
+            if (currentHeight === previousHeight) {
+                console.log("No new comments loaded, stopping scroll.");
+                break;
+            }
+
+            previousHeight = currentHeight;
+            scrollAttempts++;
+
+            // Optional: Break if the number of comments is large enough
+            if (comments.size >= 1000) {
+                console.log("Reached comment limit.");
+                break;
+            }
+        }
+
+        observer.disconnect(); // Stop observing after scraping
+        console.log("All comments scraped:", Array.from(comments));
+
+        // Send comments to background script
+        chrome.runtime.sendMessage({ type: "comments", data: Array.from(comments) });
+    };
+
+    // Start scrolling in the background
+    autoScroll();
+}
+
+scrapeComments();
+
+
+
+async function scrapeComments() {
+    const COMMENT_SELECTOR = "#content-text"; // Adjust for different platforms
+    const COMMENT_CONTAINER = "#comments"; // Main comment container
+    let comments = new Set(); // Using Set to avoid duplicates
+    let commentContainer = document.querySelector(COMMENT_CONTAINER);
+
+    if (!commentContainer) {
+        console.error("Comment container not found.");
+        return;
+    }
+
+    // Use MutationObserver to capture dynamically loaded comments
+    let observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            mutation.addedNodes.forEach((node) => {
+                if (node.nodeType === 1 && node.matches(COMMENT_SELECTOR)) {
+                    console.log("New comment detected:", node.textContent.trim());
+                    comments.add(node.textContent.trim());
+                }
+            });
+        });
+    });
+
+    observer.observe(commentContainer, { childList: true, subtree: true });
+
+    // Scroll to load more comments
+    let scrollContainer = document.documentElement;
+    let previousHeight = 0;
+
+    for (let i = 0; i < 10; i++) {
+        scrollContainer.scrollBy(0, 1000);
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+
+        let currentHeight = scrollContainer.scrollHeight;
+        if (currentHeight === previousHeight) break; // Stop if no more comments are loaded
+        previousHeight = currentHeight;
+
+        if (comments.size >= 1000) {
+            console.log("Reached comment limit.");
+            break;
+        }
+    }
+
+    observer.disconnect(); // Stop observing after scraping
+    console.log("All comments scraped:", Array.from(comments));
+
+    // Send comments to background script
+    chrome.runtime.sendMessage({ type: "comments", data: Array.from(comments) });
+}
+
+scrapeComments();
+
+

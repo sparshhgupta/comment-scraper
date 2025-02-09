@@ -1,0 +1,84 @@
+{
+    "audio_related_keywords": [
+        "mic", "microphone", "audio", "sound", "volume", "low", "bad", "echo", 
+        "background noise", "distorted", "hiss", "clarity", "muffled", "unbalanced", 
+        "static", "amplification", "headphones", "noise", "tone", "pitch", 
+        "treble", "bass", "feedback", "hum", "speech clarity", "recording quality", 
+        "disturbance", "noise cancellation", "gain", "level", "frequency", 
+        "audible", "clear sound", "loud", "quiet", "overpowering audio", 
+        "audio distortion", "acoustic quality"
+    ],
+    "video_related_keywords": [
+        "camera", "quality", "focus", "clear", "sharp", "video", "lighting", 
+        "visuals", "resolution", "color", "brightness", "contrast", "exposure", 
+        "frame rate", "fps", "lens", "image stabilization", "grainy", "blurry", 
+        "vivid", "definition", "stream quality", "viewing experience", 
+        "filter", "saturation", "depth of field", "sharpness", "visual appeal", 
+        "frame drop", "pixelation", "artifacting", "motion blur", "rendering", 
+        "cinematography", "lighting adjustment", "visual storytelling", 
+        "camera angle"
+    ],
+    "content_related_keywords": [
+        "boring", "slow", "uninteresting", "pacing", "engaging", "dynamic", 
+        "informative", "relevant", "captivating", "tedious", "exciting", 
+        "interactive", "compelling", "fun", "dull", "exciting", "overwhelming", 
+        "underwhelming", "entertaining", "creative", "educational", "innovative", 
+        "fresh", "dated", "repetitive", "original", "unique", "motivational", 
+        "engrossing", "dry", "storytelling", "narrative", "topic", "theme", 
+        "concept", "engagement level", "focused discussion", "depth", "insight"
+    ],
+    "technical_related_keywords": [
+        "noise", "echo", "feedback", "disturbance", "poor", "issues", 
+        "latency", "disconnect", "compatibility", "glitch", "lag", 
+        "technical difficulty", "error", "bug", "crash", "outage", 
+        "interruption", "distortion", "malfunction", "static", "troubleshooting", 
+        "optimization", "performance", "instability", "unreliable", 
+        "sync issue", "delay", "overheating", "frame skipping", 
+        "hardware problem", "software issue", "streaming problem", 
+        "buffering", "download speed", "configuration", "system lag", 
+        "device incompatibility", "connectivity issues"
+    ],
+    "positive_feedback_keywords": [
+        "insightful", "interesting", "learned", "educational", "engaging", 
+        "brilliant", "fantastic", "amazing", "great", "helpful", "useful", 
+        "enjoyable", "inspiring", "motivational", "thought-provoking", 
+        "impressive", "valuable", "effective", "well-done", "high-quality", 
+        "exceptional", "informative", "entertaining", "fascinating", 
+        "worthwhile", "creative", "excellent", "practical", "awesome", 
+        "encouraging", "pleasing", "eye-opening", "wonderful", "outstanding", 
+        "remarkable", "commendable", "uplifting", "well-presented", 
+        "admiration", "respect", "commendable effort"
+    ],
+    "platform_related_keywords": [
+        "platform", "upload", "streaming service", "server issue", "interface", 
+        "UI", "user interface", "experience", "recommendation system", 
+        "suggestions", "navigation", "comments section", "viewer analytics", 
+        "app", "mobile", "desktop", "streaming quality", "loading time", 
+        "buffering issues", "platform limitations", "ad interruptions", 
+        "subscription", "feature request", "interaction flow"
+    ],
+    "interaction_related_keywords": [
+        "comments", "questions", "replies", "interaction", "engagement", 
+        "audience feedback", "community", "sharing", "collaboration", 
+        "live chat", "responding", "addressing", "interaction quality", 
+        "participation", "viewer involvement", "viewer connection", 
+        "active engagement", "viewer opinions", "dialogue", "discussion", 
+        "community engagement"
+    ],
+    "emotional_feedback_keywords": [
+        "happy", "satisfied", "pleased", "grateful", "impressed", 
+        "unhappy", "disappointed", "frustrated", "angry", "annoyed", 
+        "upset", "overwhelmed", "excited", "relieved", "appreciative", 
+        "enthusiastic", "worried", "content", "sad", "joyful", 
+        "inspired", "motivated", "connected", "empathetic", "engaged", 
+        "disconnected", "apathetic", "critical", "supportive", "hopeful"
+    ],
+    "general_feedback_keywords": [
+        "suggestions", "advice", "improvement", "review", "feedback", 
+        "comments", "criticism", "opinion", "insights", "observations", 
+        "appreciation", "evaluation", "recommendation", "praise", 
+        "concerns", "ideas", "remarks", "constructive", "input", 
+        "overview", "thoughts", "acknowledgment", "assessment", 
+        "recognition", "reflection"
+    ]
+}
